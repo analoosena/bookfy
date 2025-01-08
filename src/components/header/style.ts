@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderColor= styled.div`
+export const HeaderColor = styled.div`
   margin: 0 auto;
   background-color: #d6d6d6;
 `;
@@ -24,24 +24,26 @@ export const Link = styled.a`
   font-weight: 500;
   font-size: 13px;
   background-color: transparent;
-
+  &:hover {
+    font-weight: 700;
+  }
 `;
-export const LogInButton = styled.button `
-  background-color: #F6D133;
-  border: 1px solid #B88318;
+export const LogInButton = styled.button`
+  background-color: #f6d133;
+  border: 1px solid #b88318;
   border-radius: 3px;
   text-align: center;
   padding: 5px;
   font-weight: 600;
   cursor: pointer;
-  div{
+  div {
     display: flex;
     align-items: center;
-    background-color: #F6D133;
+    background-color: #f6d133;
     gap: 2px;
   }
-  :hover{
+  :hover {
     padding: 2px;
-    color: #B88318;
+    color: #b88318;
   }
-  `
+`;
