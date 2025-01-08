@@ -61,6 +61,10 @@ export const Forms = styled.form`
         border: none;
         border-radius: 3px;
         background-color: #d9d9d9;
+        &:focus {
+      border: 2px solid #b88318;
+      outline: none;
+    }
       }
     }
   }
