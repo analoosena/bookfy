@@ -24,10 +24,22 @@ export const ContainerItem = styled.div`
   background-color: #fff;
   width: 90%;
   text-align: center;
+  position: relative;
+  button{
+    position: absolute;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #c6c6c6;
+    font-size: 18px;
+    cursor: pointer;
+  }
   p{
     font-style: italic;
     font-size: 12px;
     padding-bottom: 16px;
+    padding-top: 2px;
   }
   h4{
     padding-bottom: 2%;
@@ -35,5 +47,8 @@ export const ContainerItem = styled.div`
   h5{
     color: #c6c6c6;
     padding-bottom: 16px;
+  }
+  .close{
+    display: none;
   }
 `;

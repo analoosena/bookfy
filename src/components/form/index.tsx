@@ -39,9 +39,8 @@ const Form = () => {
       setSelectedGender("");
       setSelectedStatus("");
       setSelectedYear("");
-      console.log(
-        `nome: ${newName}; autor ${newAutor} genero: ${selectedGender} ano: ${selectedYear} status: ${selectedStatus}`
-      );
+    } else {
+      return alert("Escrava o nome do livro!");
     }
   };
 

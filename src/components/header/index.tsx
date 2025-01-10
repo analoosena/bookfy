@@ -1,16 +1,16 @@
 import { VscAccount } from "react-icons/vsc";
-import { HeaderContainer, Logo, Link, LogInButton, HeaderColor } from "./style";
+import { HeaderContainer, Logo, LogInButton, HeaderColor, LinkStyled } from "./style";
 
 const Header = () =>{
   return(
     <HeaderColor>
       <HeaderContainer>      
         <Logo src="src\assets\logo_bookfy-removebg-preview.png" alt="logo bookfy" />
-        <Link href="#">Novo Livro</Link>
-        <Link href="#">Minha Estante</Link>
+        <LinkStyled to="/novo-livro">Novo Livro</LinkStyled>
+        <LinkStyled to="/minha-estante">Minha Estante</LinkStyled>
         <LogInButton>
           <div>
-            <VscAccount style={{backgroundColor: '#F6D133'}} />Log In
+            <VscAccount/>Log In
         </div>
         </LogInButton>
       </HeaderContainer>

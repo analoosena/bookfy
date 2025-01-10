@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderColor = styled.div`
   margin: 0 auto;
@@ -18,12 +19,11 @@ export const Logo = styled.img`
   margin: 8px;
   background-color: transparent;
 `;
-export const Link = styled.a`
+export const LinkStyled = styled(Link)`
   text-decoration: none;
   color: #000;
   font-weight: 500;
   font-size: 13px;
-  background-color: transparent;
   &:hover {
     font-weight: 700;
   }

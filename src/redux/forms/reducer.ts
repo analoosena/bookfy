@@ -7,22 +7,27 @@ type Book = {
   yearOption: string;
   statusOption: string;
 };
-type FormsLibrabyState ={
-  books: Book[];
-}
+type FormsLibrabyState = {
+  books: Book[],
+  itens: number[],
+};
 const initialState: FormsLibrabyState = {
-  books:[]
-}
+  books: [],
+  itens:[],
+};
 
 const formsLibrabySlice = createSlice({
   name: "formsLibraby",
   initialState,
   reducers: {
     addBook: (state, action: PayloadAction<Book>) => {
-      state.books.push(action.payload)
+      state.books.push(action.payload);
     },
+    removeBook(state,action: PayloadAction<number>){
+      state.itens.push(action.payload)
+    }
   },
 });
 
-export const { addBook } = formsLibrabySlice.actions;
+export const { addBook, removeBook } = formsLibrabySlice.actions;
 export default formsLibrabySlice;
